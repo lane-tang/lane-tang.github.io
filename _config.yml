@@ -1,0 +1,49 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Encoding
+encoding:         utf-8
+
+# Time Zone
+timezone:         Asia/Chongqing
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Home
+tagline:          'Lane Tang'
+description:      'KEEP IT <br/>&emsp; SIMPLE STUPID'
+url:              http://lanetang.com
+baseurl:          /
+
+author:
+  name:           'Lane Tang'
+  url:            https://www.facebook.com/behindtheshadowtolook
+
+paginate:         5
+paginate_path:    "page:num"
+
+# Custom vars
+version:          2.2.2
+
+github:
+  repo:           https://github.com/behindtheshadow/behindtheshadow.github.io
+
+# Google Analytics/Webmaster key, leave blank to ignore
+google_analytics_key:
+google_webmaster_key:
+
+# Files/Folders to be excluded from generated _site folder
+exclude:
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Gems
+gems:             [jekyll-paginate, jekyll-gist]
