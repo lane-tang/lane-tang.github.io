@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " MongoDB 常用语法简介"
+title:  " MongoDB Cheat Sheet"
 date:   2017-01-17 12:45:00 +0800
 categories:
 - Data Base
