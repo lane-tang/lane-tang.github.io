@@ -15,7 +15,7 @@ permalink:        pretty
 title:            Home
 tagline:          'Lane Tang'
 description:      'KEEP IT <br/>&emsp; SIMPLE STUPID'
-url:              http://lanetang.com
+url:              http://lanetang.me
 baseurl:          /
 
 author:
@@ -44,6 +44,9 @@ exclude:
   - .gitignore
   - .sass-cache
   - Gemfile.lock
+  - vendor
 
 # Gems
-gems:             [jekyll-paginate, jekyll-gist]
+plugins:
+  - jekyll-paginate
+  - jekyll-gist

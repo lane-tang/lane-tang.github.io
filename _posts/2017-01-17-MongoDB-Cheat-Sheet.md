@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  " MongoDB Cheat Sheet"
+title:  "MongoDB Cheat Sheet"
 date:   2017-01-17 12:45:00 +0800
 categories:
-- Data Base
-- NodeJS
+- Database
 comments: true
 ---
 MongoDB 是一个用 C++ 语言编写，指在为 Web 应用提供高性能数据存储访问的分布式文件存储数据库。它采用 JSON 的格式存储数据，并且兼容 JavaScript 语法， 常用于 Node.js 的运行环境下为用户提供数据访问与存储服务。
@@ -121,7 +120,7 @@ physicist
 ---
 ## 添加数据
 
-用`insert`函数添加一条JSON格式的数据 
+用`insert`函数添加一条JSON格式的数据
 ```shell
 > db.physicist.insert({first_name : "Albert", last_name : "Einstein", age : 70 });
 WriteResult({ "nInserted" : 1 })

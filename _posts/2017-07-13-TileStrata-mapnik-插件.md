@@ -69,5 +69,5 @@ TileStrata 的切片数据源以 `.xml` 格式文件定义。该文件同时配�
 hostname:port/:layer/:z/:x:/:y/:filename
 ```
 格式输入 `url` 即可获取对应切片信息。
-![ScreenShot]({{ site.url }}/public/img/2017/07/13/14-18-31.png)
+![ScreenShot]({{ base.siteurl }}/public/img/2017/07/13/14-18-31.png)
 

@@ -62,7 +62,7 @@ layer.route('tile.json')
 ```
 
 以 url： `http://localhost:8082/basemap/5/17/14/tile.json` 结果为例,它的切片图像为：
-![ScreenShot]({{ site.url }}/public/img/2017/07/19/19-36-35.png)
+![ScreenShot]({{ site.baseurl }}/public/img/2017/07/19/19-36-35.png)
 
 
 ```json
@@ -404,7 +404,7 @@ layer.route('tile.json')
 ```
 
 生成的 Json 数据即包含切片的相关空间信息
-![ScreenShot]({{ site.url }}/public/img/2017/07/19/19-28-36.png)
+![ScreenShot]({{ base.siteurl }}/public/img/2017/07/19/19-28-36.png)
 
 
 

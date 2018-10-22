@@ -54,7 +54,7 @@ server.layer('mylayer').route('tile.png')
 // ...
 ```
 可以发现，在以上代码设定范围内的切片均没有在文件系统中缓存：
-![ScreenShot]({{ site.url }}/public/img/2017/07/15/16-04-12.png)
+![ScreenShot]({{ base.siteurl }}/public/img/2017/07/15/16-04-12.png)
 
 使用者可以自定义缓存文件路径：
 ```javascript

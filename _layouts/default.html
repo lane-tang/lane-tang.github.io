@@ -5,10 +5,14 @@
 
 <body>
 
-    {% include sidebar.html %}
+    <header>
+        {% include sidebar.html %}
+    </header>
 
     <div class="content container">
-        {{ content }}
+        <div class="page-container">
+            {{ content }}
+        </div>
     </div>
 
 </body>

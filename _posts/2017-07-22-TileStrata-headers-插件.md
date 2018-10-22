@@ -8,4 +8,4 @@ categories:
 comments: true
 ---
 
-![ScreenShot]({{ site.url }}/public/img/2017/07/22/21-26-32.png)
+![ScreenShot]({{ base.siteurl }}/public/img/2017/07/22/21-26-32.png)
