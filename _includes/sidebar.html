@@ -1,5 +1,11 @@
 <div class="sidebar">
-    <div class="header-image header-image--on" style="background-image: url(/public/img/home.jpg)"></div>
+
+    {% if page.banner_image %}
+        <div class="header-image header-image--on" style="background-image: url({{ "public/img/" | append: page.banner_image | prepend: site.baseurl }})"></div>
+    {% else  %}
+        <div class="header-image header-image--on" style="background-image: url(/public/img/home.jpg)"></div>
+    {% endif %}
+
     <div class="header-image"></div>
 
     <div class="sidebar-sticky">
@@ -9,7 +15,7 @@
                 <img class="sidebar-icon" src="{{ site.baseurl }}public/img/user-icon.png" alt="user icon" />
             </a> 
             -->
-            <p class="lead">吾欲载之空言, 不如见之行事之深切著明也. </p>
+            <p class="lead">Interested in Android, Machine Learning, IOT, Coding and all other cool things.</p>
         </div>
 
         <nav class="sidebar-nav">
@@ -33,7 +39,7 @@
             {% endfor %}
         </nav>
 
-        <div class="sidebar-foot">
+        <div class="sidebar-footer">
             <p>Currently v{{ site.version }}</p>
             <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.<p>
         </div>

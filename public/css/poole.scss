@@ -71,16 +71,9 @@ body {
 
 header {
     position: relative;
-    padding: 32px 24px;
     float: left;
     clear: both;
     width: 100%;
-}
-
-@media (min-width: 48em) {
-    header {
-        padding: 0px 24px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -423,6 +416,19 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
     margin-bottom: 1em;
+
+    h2:not(:first) {
+        margin-top: 2.5em;
+    }
+
+    p {
+        margin-top: 29px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 21px;
+        line-height: 1.58;
+        letter-spacing: -.003em;
+    }
 }
 
 @media (min-width: 30em) {
@@ -470,7 +476,7 @@ tbody tr:nth-child(odd) th {
 
 .page-title,
 .post-title {
-    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 
@@ -487,21 +493,11 @@ tbody tr:nth-child(odd) th {
     display: block;
     margin-bottom: 1.5rem;
     user-select: none;
-}
 
-.post-category-tag {
-    background-color: #363636;
-    color: #c6c6c6;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-left: 0.5rem;
-    -webkit-border-radius: 0.6em;
-    -moz-border-radius: 0.6em;
-    -ms-border-radius: 0.6em;
-    -o-border-radius: 0.6em;
-    border-radius: 0.6em;
+    .tag {
+        margin-left: 8px;
+    }
 }
-
 
 /* Related posts */
 

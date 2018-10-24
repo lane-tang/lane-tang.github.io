@@ -2,6 +2,7 @@
 layout: default
 title: Home
 order: 1
+banner_image: home.jpg
 ---
 
 <div class="posts">
@@ -48,22 +49,19 @@ order: 1
                         {% endif %}
                     </span>
 
-                <!-- 
                     {% if post.categories.size > 0 %}
                         {% for category in post.categories %}
                             {% assign category = post.categories | where: "categories", "category" | first %}
-                            <span class="post-category-tag">
-                                {{ category }}
+                            <span class="tag">
+                                # {{ category }}
                             </span>
                         {% endfor %}
                     {% endif %} 
-                -->
-
                 </p>
 
                 <p>{{ post.excerpt }}</p>
 
-                <a href="{{ post.url }}">Read
+                <a href="{{ post.url }}">
                     Read More ...
                 </a>
         </div>
