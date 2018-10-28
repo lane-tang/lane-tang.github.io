@@ -16,7 +16,7 @@ title:            Home
 tagline:          'Lane Tang'
 description:      'KEEP IT <br/>&emsp; SIMPLE STUPID'
 url:              http://lanetang.me
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Lane Tang'
