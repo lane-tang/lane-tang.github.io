@@ -416,9 +416,29 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
     margin-bottom: 1em;
+}
 
-    h2:not(:first) {
-        margin-top: 2.5em;
+@media (min-width: 30em) {
+    .page,
+    .post {
+        margin-bottom: 4em;
+    }
+}
+
+.post-content {
+    h2 {
+        margin-top: 64px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin-top: 48px;
+        margin-bottom: 16px;
+    }
+
+    h4 {
+        margin-top: 32px;
+        margin-bottom: 8px;
     }
 
     p {
@@ -428,13 +448,6 @@ tbody tr:nth-child(odd) th {
         font-size: 21px;
         line-height: 1.58;
         letter-spacing: -.003em;
-    }
-}
-
-@media (min-width: 30em) {
-    .page,
-    .post {
-        margin-bottom: 4em;
     }
 }
 
@@ -458,11 +471,22 @@ tbody tr:nth-child(odd) th {
 
 .post-info {
     padding: 2em;
+
+    .read-more {
+        display: inline;
+        color: white;
+        background: #11bcd3b7;
+        height: 36px;
+        top: 0px;
+        line-height: 48px;
+        padding: 0.5em 1em;
+        border-radius: 2px;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
 }
 
 .banner-image {
     border-radius: 5px 5px 0px 0px;
-    padding-bottom: 1em;
 }
 
 
@@ -477,6 +501,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
     margin-bottom: 1em;
+    margin-top: 0;
 }
 
 
@@ -491,7 +516,7 @@ tbody tr:nth-child(odd) th {
 
 .post-meta {
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     user-select: none;
 
     .tag {

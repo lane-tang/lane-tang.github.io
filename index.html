@@ -21,51 +21,53 @@ banner_image: home.jpg
     <span class="post-date">{{ post.date | date_to_string }}</span>
     -->
 
-        <article class="post-excerpt">
+    <article class="post-excerpt">
 
-            {% if post.banner_image %}
-            <div>
-                <a href="{{ post_url }}" title="{{ post.title }}">
-                    <img class="banner-image"
-                        src="{{ "public/img/" | append: post.banner_image | prepend: site.baseurl }}"
-                        alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
-                </a>
-            </div>
-            {% endif %}
-
-            <div class="post-info">
-                <h1 class="post-title">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h1>
-
-                <p class="post-meta">
-                    <span class="post-date">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                        {% if post.author %} • {{ post.author }}
-                        {% endif %}
-                        {% if post.meta %} • {{ post.meta }}
-                        {% endif %}
-                    </span>
-
-                    {% if post.categories.size > 0 %}
-                        {% for category in post.categories %}
-                            {% assign category = post.categories | where: "categories", "category" | first %}
-                            <span class="tag">
-                                # {{ category }}
-                            </span>
-                        {% endfor %}
-                    {% endif %} 
-                </p>
-
-                <p>{{ post.excerpt }}</p>
-
-                <a href="{{ post.url }}">
-                    Read More ...
-                </a>
+        {% if post.banner_image %}
+        <div>
+            <a href="{{ post_url }}" title="{{ post.title }}">
+                <img class="banner-image"
+                    src="{{ "public/img/" | append: post.banner_image | prepend: site.baseurl }}"
+                    alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
+            </a>
         </div>
-        </article>
+        {% endif %}
+
+        <div class="post-info">
+            <h1 class="post-title">
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h1>
+
+            <p class="post-meta">
+                <span class="post-date">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                    {% if post.author %} • {{ post.author }}
+                    {% endif %}
+                    {% if post.meta %} • {{ post.meta }}
+                    {% endif %}
+                </span>
+
+                {% if post.categories.size > 0 %}
+                    {% for category in post.categories %}
+                        {% assign category = post.categories | where: "categories", "category" | first %}
+                        <span class="tag">
+                            # {{ category }}
+                        </span>
+                    {% endfor %}
+                {% endif %} 
+            </p>
+
+            <p>{{ post.excerpt }}</p>
+
+            <a href="{{ post.url }}">
+                <div class="read-more">
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+    </article>
 
     </div>
     {% endfor %}
