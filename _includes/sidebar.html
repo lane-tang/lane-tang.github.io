@@ -1,7 +1,7 @@
 <div class="sidebar">
 
     {% if page.banner_image %}
-        <div class="header-image header-image--on" style="background-image: url({{ "public/img/" | append: page.banner_image | prepend: site.baseurl }})"></div>
+        <div class="header-image header-image--on" style="background-image: url({{ "/public/img/" | append: page.banner_image | prepend: site.baseurl }})"></div>
     {% else  %}
         <div class="header-image header-image--on" style="background-image: url(/public/img/home.jpg)"></div>
     {% endif %}
@@ -19,7 +19,7 @@
         </div>
 
         <nav class="sidebar-nav">
-            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blogs</a>
+            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">Blogs</a>
 
             {% comment %}
                 The code below dynamically generates a sidebar nav of pages with
