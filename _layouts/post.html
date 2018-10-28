@@ -5,7 +5,7 @@ layout: default
 <div class="post post-content">
     {% if page.banner_image %}
     <div class="banner-image">
-        <img src="{{ "public/img/" | append: page.banner_image | prepend: site.baseurl }}" alt="{{ page.banner_image_alt }}">
+        <img src="{{ "/public/img/" | append: page.banner_image | prepend: site.baseurl }}" alt="{{ page.banner_image_alt }}">
     </div>
     {% endif %}
 
