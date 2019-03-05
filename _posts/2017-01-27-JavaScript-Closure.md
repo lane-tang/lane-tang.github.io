@@ -25,7 +25,7 @@ console.dir(addTwo);
 ```
 
 以上代码在 Chrome 浏览器的运行结果如下：
-![My helpful screenshot]({{ base.siteurl }}/public/img/screenshot-from-2017-01-27.png)
+![My helpful screenshot]({{ base.siteurl }}/public/img/2017/01/27/closure.png)
 可以看到，outer变量在这里以闭包的形式存在。  
 这就是闭包最本质的意义。
 

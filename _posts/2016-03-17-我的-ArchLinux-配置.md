@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我在 ArchLinux 下的 Gnome 配置"
+title:  "我的 ArchLinux 配置"
 date:   2016-03-17 12:45:00 +0800
 categories:
 - ArchLinux

@@ -1,9 +1,9 @@
 <div class="sidebar">
 
     {% if page.banner_image %}
-        <div class="header-image header-image--on" style="background-image: url({{ "/public/img/" | append: page.banner_image | prepend: site.baseurl }})"></div>
-    {% else  %}
-        <div class="header-image header-image--on" style="background-image: url(/public/img/home.jpg)"></div>
+    <div class="header-image header-image--on" style="background-image: url({{ "/public/img/" | append: page.banner_image | prepend: site.baseurl }})"></div>
+    {% else %}
+    <div class="header-image header-image--on" style="background-image: url(/public/img/home.jpg)"></div>
     {% endif %}
 
     <div class="header-image"></div>
@@ -19,24 +19,29 @@
         </div>
 
         <nav class="sidebar-nav">
-            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">Blogs</a>
+            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/{{ site.baseurl }}">博客 / <small>Blogs</small></a>
+            <a class="sidebar-nav-item{% if page.url == '/skills' %} active{% endif %}" href="/skills">技能 / <small>Skills</small></a>
+            <a class="sidebar-nav-item{% if page.url == '/projects' %} active{% endif %}" href="/projects">项目 / <small>Projects</small></a>
+            <a class="sidebar-nav-item{% if page.url == '/about-me' %} active{% endif %}" href="/about-me">关于 / <small>About</small></a>
 
             {% comment %}
-                The code below dynamically generates a sidebar nav of pages with
-                `layout: page` in the front-matter. See readme for usage.
+            The code below dynamically generates a sidebar nav of pages with
+            `layout: page` in the front-matter. See readme for usage.
             {% endcomment %}
 
-    		<!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
+            <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
 
+            <!-- 
             {% assign pages_list = site.pages | sort: "order" %}
             {% for node in pages_list %}
-                {% if node.title != null %}
-                    {% if node.layout == "page" %}
-                        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
-                            {{ node.title }}</a>
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
+            {% if node.title != null %}
+            {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
+                {{ node.title }}</a>
+            {% endif %}
+            {% endif %}
+            {% endfor %} 
+            -->
         </nav>
 
         <div class="sidebar-footer">

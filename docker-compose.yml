@@ -1,12 +1,12 @@
 version: "3"
 services:
   site:
-    command: jekyll serve
-    image: jekyll/jekyll:latest
-    volumes:
-      - $PWD:/srv/jekyll
-      - $PWD/vendor/bundle:/usr/local/bundle
+    build: .
     ports:
       - 35729:35729
       - 3000:3000
       -   80:4000
+    volumes:
+      - $PWD:/srv/jekyll
+      - $PWD/vendor/bundle:/usr/local/bundle
+    command: bundle exec jekyll serve --watch --incremental

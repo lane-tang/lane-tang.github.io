@@ -52,13 +52,13 @@ html, body {
 
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
 @media (min-width: 48em) {
     html {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -218,7 +218,7 @@ pre {
     overflow-x: auto;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9;;
 
     code {
         padding: 0;
@@ -427,25 +427,21 @@ tbody tr:nth-child(odd) th {
 
 .post-content {
     h2 {
-        margin-top: 64px;
-        margin-bottom: 16px;
+        margin-top: 2.4rem;
     }
 
     h3 {
-        margin-top: 48px;
-        margin-bottom: 16px;
+        margin-top: 1.6rem;
     }
 
     h4 {
-        margin-top: 32px;
-        margin-bottom: 8px;
+        margin-top: 0.8rem;
     }
 
     p {
-        margin-top: 29px;
+        margin-top: 8px;
         font-weight: 400;
         font-style: normal;
-        font-size: 21px;
         line-height: 1.58;
         letter-spacing: -.003em;
     }
@@ -470,7 +466,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .post-info {
-    padding: 2em;
+    padding: 1.2em;
 
     .read-more {
         display: inline;
@@ -524,6 +520,10 @@ tbody tr:nth-child(odd) th {
     }
 }
 
+.post-intro + p {
+    margin: 16px;
+}
+
 /* Related posts */
 
 .related {
@@ -535,6 +535,7 @@ tbody tr:nth-child(odd) th {
 .related-posts {
     padding-left: 0;
     list-style: none;
+    margin: 32px 0;
 
     h3 {
         margin-top: 0;
